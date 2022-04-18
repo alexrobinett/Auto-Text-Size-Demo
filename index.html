@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="demo of text auto resize">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Text Resize Demo</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header><h1>Dynamic Text Demo</h1></header>
+
+		<Section id="inputSec">
+			<label for="textinput">Place your Headline Here</label>
+			<input type="text" name="Your Headline Goes Here" id="headLineText">
+			<button id="newHeadline" name="New Headline">Headline</button>
+		</Section>
+	
+		<Section id="articleBoxes">
+		<Section id="articleSec">
+			<div id="headlineContainter"><h2 id="headline">Place holder Headline</h2></div>
+		<p id="para1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</Section>
+
+		<Section id="sectionTwo">
+		</Section>
+
+	</Section>
+		<script type="text/javascript" src="js/fitty.min.js"></script>
+
+		<script type="text/javascript" src="js/main.js"></script>
+		<script>
+			fitty('#headline' , '#para1' , {
+				multiLine: true,
+			});
+		</script>
+	</body>
+</html>
