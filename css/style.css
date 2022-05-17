@@ -2,30 +2,43 @@
 /* CSS
 /*******************************************/
 
-/* Box Model Hack */
+/* * Box Model Hack */
 *{
   box-sizing: border-box;
-}
+} *
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 
 body{
-  background-image: linear-gradient(to right, red , yellow);
+  background-color: aliceblue;
 }
 
 header{
   float: left;
   height: 100px;
   width: 100%;
+  padding: 25px;
 }
 
 h1{
   text-align: center;
+  
 }
 
-#inputSec{
+p{
+  padding: 25px;
+}
+
+#headline{
+  display: inline-block;
+  padding: 1;
+
+}
+
+
+#articleBoxes,#inputSec{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,9 +61,16 @@ button{
 #articleSec{
  
   width: 600px;
-  height: 300px;
+  height: 900px;
   border: white 10px solid;
 }
+
+#headlineContainter{
+  padding: 10px;
+  border: brown solid 10px;
+  width: 100%
+}
+
 
 }
 /******************************************

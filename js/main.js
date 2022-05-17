@@ -4,5 +4,6 @@ function changeHeadline(){
     let newHeadline = document.querySelector('input').value
 
     document.querySelector('#headline').innerText = newHeadline
+
 }
 
